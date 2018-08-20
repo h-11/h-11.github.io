@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Facebook Link Preview -->
+    <meta property="og:url"           content="http://www.0ne.world" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="0ne.world" />
+    <meta property="og:description"   content="0ne.world" />
+    <meta property="og:image"         content="0ne.world" />
+</head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Custom styles for this template -->
+<link href="normalize.css" rel="stylesheet">
+<link href="mystyle.css" rel="stylesheet">
+
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <a class="navbar-brand" href="#">ausgehen.info</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Startseite (Heute)</a></li>
+        <li><a href="./Morgen">Morgen</a></li>
+        <li><a href="./Kalender">Kalender</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../navbar/">Termin eintragen</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+    
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand navbar-brand-bottom" style="font-size: 10px;" href="#">&copy; <?php echo date("Y");?> » ausgehen.info</a>
+        </div>
+  
+        <div id="navbar" class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Default</a></li>
+            <li><a href="../navbar-static-top/">Static top</a></li>
+            <li class="active"><a href="./">Impressum<span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div>
+      </div>
+  </div>      
+</nav>
+
+<body>
+
+<div class="container">
+
+         <div class="row">
+            <div class="col-lg-12">
+            </div>
+        </div>
+        <div class="row">
+            <div class="jumbotron text-center">
+              <p>Events in und um Bad Neustadt a. d. Saale</p>
+                 <?php
+                setlocale(LC_TIME, "de_DE");
+echo "Today is " . date("l, ") ."der " . date("d. F Y"). " (" . date("e/T") .")";
+?> 
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+           <table class="table">
+            <tr><th><?php echo date("d - m");?></th></tr>
+            <tr><td> </td><td> Title</td><td>Location</td></tr>
+            <tr><td> </td><td> Hausparty</td><td>Musikbunker</td></tr>
+            <tr><td><div><label class="indicator" for="_info{$User->id}">&#9727;</label>
+                
+                    <label class="indicator selected" for="_info{$User->id}">&#9701;</label>
+                    
+                    </div>
+                </td>
+            
+            <td> 
+                    <div><label class="mycollapse" for="_info{$User->id}">ttt</label>
+                    <input id="_info{$User->id}" type="checkbox">
+                    <div class="see"><p>lol</p></div>
+                    </div>
+                </td><td><div><label class="mycollapse" for="_info{$User->id}">Musikbunker</label>
+                    </div></td></tr>
+            <tr><td> </td><td> Hausparty 3</td><td>Musikbunker</td></tr>
+            <tr><td> </td><td> Hausparty 3</td><td>Musikbunker</td></tr>
+
+
+            </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+            <button>Verlauf öffnen</button>
+            </div>
+        </div>
+    <br>
+
+</div>
+
+
+</body>
+</html>
